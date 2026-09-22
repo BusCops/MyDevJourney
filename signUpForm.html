@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="/image/logo transparant.png">
+		<title>sign up</title>
+	</head>
+	<body>
+		<form action="signUpForm.html" method="POST" enctype="multipart/form-data">
+
+			<label for="username">username:</label>
+			<input type="text" id="username" placeholder="flan fartlan" required>
+
+			<br>
+
+			<label for="password">password:</label>
+			<input type="password" id="password" required>
+			<br>
+
+			<label for="email">email:</label>
+			<input type="email" id="email" placeholder="flan.fartlan@email.com" required>
+
+			<br>
+
+			<label for="phone">phone:</label>
+			<input type="tel" id="phone" placeholder="0600000000"
+				pattern="[0]{1}[0-9]{9}" required>
+
+			<br>
+
+			<label for="bday">day of birth:</label>
+			<input type="date" id="bday">
+
+			<br>
+
+			<lable for="gender">gender:</lable>
+
+			<lable for="male">male</lable>
+			<input type="radio" id="male" value="male" name="gender">
+
+			<lable for="female">female</lable>
+			<input type="radio" id="female" value="female" name="gender">
+
+			<br>
+
+			<label for="school">school</label>
+			<select id="school">
+				<option value="benguerir">benguerir</option>
+				<option value="rabat">rabat</option>
+				<option value="khouribga">khouribga</option>
+				<option value="tetouan">tetouan</option>
+			</select>
+
+			<br>
+
+			<label for="terms">accept terms of use</label>
+			<input type="checkbox" id="terms">
+			<a href="/docs/Term of use.pdf" target="_blank" title="term of use"
+				style="font-size:5px;">
+				read term of use carefully
+			</a>
+
+			<br>
+
+			<input type="submit">
+
+		</form>
+	</body>
+</html>
