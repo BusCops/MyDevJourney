@@ -1,24 +1,121 @@
-body{
+:root {
+	font-size: 16px;
+	margin: 1rem;
+	padding: 0.5rem;
+}
+
+body {
+	background: black;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+header {
+	background: linear-gradient(black, gold);
+	background-color: gold;
+	color: white;
+	border-radius: 15px;
+	padding: 10px 10px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#logo {
+	padding: 10px 10px;
+}
+
+header h1 {
+	text-align: center;
+	color: black;
+}
+
+.navBar {
+	margin: 10px;
+	padding: 5px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 50px;
+	margin: 15px 15px;
 	background-color: black;
-	color: white;
+	gap: 50px;
 }
 
-header{
-	background-color: #FFD600;
-	color : white;
-}
+.navBar ul {
 
-header h1{
-	text-align: center;
-}
-
-.navBar ul{
+	background-color: black;
 	list-style: none;
-	padding: 10px;
-	border: 5px solid black;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	border-radius: 15px;
+	gap: 50px;
+}
+
+.navBar li a {
+	padding: 0px;
+	margin: 0px 10px;
+	color: white;
+	display: block;
 	text-align: center;
 }
 
-.navBar a{
+.navBar li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* .navBar button {
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	background-color: darkgoldenrod;
+	border-radius: 50px;
+	transition-duration: 0.4s;
+} */
+
+#signUp {
+	color: black;
+	padding: 0px 10px;
+	background-color: darkgoldenrod;
+	border: 2px solid gold;
+	border-radius: 50px;
+	transition-duration: 0.4s;
+}
+
+#signUp:hover {
+	padding: 0px 20px;
+	color: darkgoldenrod;
+	background-color: black;
+	border: 2px solid darkgoldenrod;
+}
+
+.divClass {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	min-width: 200px;
+	min-height: 100px;
 	color: white;
 }
+
+.divClass p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	min-height: 200px;
+	/* margin: 10px; */
+	padding: 16px;
+	background: linear-gradient(darkgoldenrod, black);
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: 1px 1px 2px 1px gray;
+}
+
+@media (max-width: 900px) {}
