@@ -12,6 +12,8 @@ body {
 }
 
 header {
+	position: sticky;
+	top: 0px;
 	background: linear-gradient(black, gold);
 	background-color: gold;
 	color: white;
@@ -30,7 +32,7 @@ a {
 
 header h1 {
 	text-align: center;
-	color: black;
+	color: white;
 }
 
 .navBar {
@@ -95,6 +97,7 @@ header h1 {
 }
 
 .divClass {
+	/* background-color: white; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -119,3 +122,27 @@ header h1 {
 }
 
 @media (max-width: 900px) {}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	grid-template-areas:
+		"box-1 box-1 box-1"
+		"box-3 box-2 box-2"
+		"box-3 box-4 box-5"
+		"box-3 box-7 box-8"
+		"box-3 box-7 box-8"
+		"box-3 box-7 box-8"
+		"box-6 box-6 box-9"
+		;
+}
+
+.item {
+	background-color: darkgoldenrod;
+	border: 1px solid white;
+	border-radius: 8px;
+	text-align: center;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+}
